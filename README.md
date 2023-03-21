@@ -1,6 +1,6 @@
 # SABS-Website-Revamp
 
-Hello everyone! My name is Neon and I am a student at Saint Anne de Beaupre School (SABS) in Quezon City, Philippines. I am very excited to share with you that I will be leading a team of talented and passionate students to revamp our school's website.
+Hello everyone! My name is FeNe and I am a student at Saint Anne de Beaupre School (SABS) in Quezon City, Philippines. I am very excited to share with you that I will be leading a team of talented and passionate students to revamp our school's website.
 
 Our school has a website that was launched in 2010. It contains information about our school's history, vision, mission, programs, admissions, facilities and activities. The website's address is sabs.edu.ph. However, we feel that the website is outdated and does not reflect the current achievements and innovations of our school. We want to create a new website that will showcase our school's excellence and diversity, as well as engage our stakeholders and prospective students.
 
