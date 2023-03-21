@@ -9,7 +9,7 @@ We hope that you are as excited as we are about this project. Together, let us m
 # Development
 We have decided to embark on this project to redesign and rebuild our school's website from scratch. We will use modern web development tools and techniques to create a responsive, user-friendly and attractive website that will highlight our school's strengths and values. We will also update the content and features of the website to make it more relevant and informative for our visitors.
 
-**Modernized Design**
+**Modernized Design** link: https://neonfelixe.github.io/SABS-Website-Revamp.github.io/
 ![Web capture_21-3-2023_204434_](https://user-images.githubusercontent.com/101835293/226610572-f220b46c-1c7c-4593-bd35-4d7b1057d14c.jpeg)
 
 ![image](https://user-images.githubusercontent.com/101835293/226610618-e5fa0455-0a18-4f34-8abd-5d9c4e6c8456.png)
