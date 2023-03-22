@@ -7,9 +7,13 @@
     <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
 
     <style>
-        /* your existing CSS styles */
+        :before,
+        :after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-        /* add styles for the menu bar */
         nav ul li:nth-child(1) a,
         nav ul li:nth-child(2) a {
             border-radius: 10px;
@@ -19,7 +23,7 @@
         nav {
             background-color: #3C6255;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             padding: 10px 20px;
             position: fixed;
@@ -40,17 +44,29 @@
 
         nav li {
             margin: 0 10px;
-
-        }
-
-        nav ul li:first-child a {
-            font-size: 1em;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: normal;
+            padding: 10px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            background-color: #61876E;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -2px;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            transition: width 0.3s linear;
+            margin-top: 8px;
         }
 
         .logo {
@@ -67,13 +83,6 @@
             margin: 0;
             font-size: 24px;
             color: #ffffff;
-        }
-
-        .vision {
-            float: right;
-            width: 50%;
-            max-width: 100%;
-            padding: 20px;
         }
 
         .contact {
@@ -95,14 +104,7 @@
 
         .class-description1 {
             display: flex;
-            margin-top: 1px;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .class-description {
-            display: flex;
-            margin-top: 10px;
+            padding: 0px 100px 20px 100px;
             text-align: center;
             justify-content: center;
         }
@@ -114,15 +116,6 @@
             word-wrap: break-word;
         }
 
-        h2:first-of-type {
-            margin-bottom: 1px;
-        }
-
-        h2:last-of-type {
-            margin-top: 1px;
-        }
-
-        /* styles for the footer */
         footer {
             background-color: #3C6255;
             color: #fff;
@@ -156,19 +149,21 @@
     </style>
 </head>
 
+
 <body>
     <!-- add the nav tag for the menu bar -->
     <nav>
         <div class="title">
             <img src="pictures/logo.png" alt="Logo" class="logo">
-            <h1><a href="#classes">Ste. Anne de Beaupré School, Inc.</a></h1>
+            <h1><a href="#classes">Ste. Anne de Beaupré School</a></h1>
         </div>
         <ul>
             <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-            <li><a href="#schedule">Schedule</a></li>
+            <li><a style="font-weight: bold; border-bottom: 3px solid white; border-radius: 2px;"
+                    href="#schedule">Schedule</a></li>
             <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
             </li>
+            <li><a href="#contact-info">Contact</a></li>
             <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a></li>
         </ul>
     </nav>
@@ -262,6 +257,7 @@
         }
 
         .container1 {
+            font-size: 20px;
             display: flex;
             justify-content: center;
             margin-top: 100px;
@@ -310,7 +306,7 @@
 
     <footer>
         <div class="bottom-bar" id="contact-info">
-            <p>Contact us: Nf.cruz@sabs.edu.ph (Under Development)</p>
+            <p>Contact us: nf.cruz@sabs.edu.ph (Under Development)</p>
         </div>
     </footer>
 
