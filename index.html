@@ -7,9 +7,13 @@
     <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
 
     <style>
-        /* your existing CSS styles */
+        :before,
+        :after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-        /* add styles for the menu bar */
         nav ul li:nth-child(1) a,
         nav ul li:nth-child(2) a {
             border-radius: 10px;
@@ -19,7 +23,7 @@
         nav {
             background-color: #3C6255;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             padding: 10px 20px;
             position: fixed;
@@ -40,17 +44,29 @@
 
         nav li {
             margin: 0 10px;
-
-        }
-
-        nav ul li:first-child a {
-            font-size: 1em;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: normal;
+            padding: 10px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            background-color: #61876E;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -2px;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            transition: width 0.3s linear;
+            margin-top: 8px;
         }
 
         .logo {
@@ -67,13 +83,6 @@
             margin: 0;
             font-size: 24px;
             color: #ffffff;
-        }
-
-        .vision {
-            float: right;
-            width: 50%;
-            max-width: 100%;
-            padding: 20px;
         }
 
         .contact {
@@ -93,11 +102,9 @@
 
         }
 
-
-
         .class-description {
             display: flex;
-            margin: 50px 300px;
+            padding: 20px 100px 20px 100px;
             text-align: center;
             justify-content: center;
         }
@@ -109,15 +116,6 @@
             word-wrap: break-word;
         }
 
-        h2:first-of-type {
-            margin-bottom: 1px;
-        }
-
-        h2:last-of-type {
-            margin-top: 1px;
-        }
-
-        /* styles for the footer */
         footer {
             background-color: #3C6255;
             color: #fff;
@@ -152,40 +150,32 @@
 </head>
 
 <body>
-    <!-- add the nav tag for the menu bar -->
     <nav>
         <div class="title">
             <img src="pictures/logo.png" alt="Logo" class="logo">
-            <h1><a href="#classes">Ste. Anne de Beaupré School, Inc.</a></h1>
+            <h1>Ste. Anne de Beaupré School, Inc.</h1>
         </div>
         <ul>
+            <li><a href="#Home">Home</a></li>
             <li><a href="#contact-info">Contact</a></li>
             <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a></li>
             <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Schedule</a></li>
-            <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a></li>
+            <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a>
+            </li>
         </ul>
     </nav>
 
-    <div class="contact" id="contact">
-        <!-- contact content goes here -->
-    </div>
-    <div class="classes" id="classes">
-        <!-- classes content goes here -->
-    </div>
-
     <div class="Description">
-        <h2 style="color:white;text-align:center; font-size: 40px; margin: 8px">SABS Official Website Revamped!</h2>
-        <h2 style="color:white;text-align:left; font-size: 15px; margin: 15px; font-weight: normal;">St. Anne de Beaupré
-            School was founded in 1974 by Miss Aurora T. Apuada as St. Anne’s Special School to
-            cater to the needs of children with special needs. Due to its efficient operations and constant improvement,
-            the school gained recognition and was granted full recognition in 1980. In 1987,
-            Ste. Anne de Beaupré School was established to mainstream special children, and it now offers recognized
-            courses from preschool to high school. Its graduates have been admitted to prestigious universities and
-            become professionals in various fields.
-            The school is now on its 36th year and is known for its top-notch educational system and strict adherence to
-            values formation.</h2>
-        <a href="https://meet.google.com/xha-dtmr-pvr?authuser=0&hs=179" target="_blank" class="button button1">Apply
-            now</a><br><br>
+        <h2 style="color:white;text-align:center; font-size: 40px; margin: 8px">SABS Official Website Revamped!
+        </h2>
+        <h2 style="color:white;text-align:center; font-size: 15px; margin: 15px; font-weight: normal;">Our school has a
+            website that was launched in 2010. It contains information about our school's history, vision, mission,
+            programs, admissions, facilities and activities. The website's address is sabs.edu.ph. However, we feel that
+            the website is outdated and does not reflect the current achievements and innovations of our school. We want
+            to create a new website that will showcase our school's excellence and diversity, as well as engage our
+            stakeholders and prospective students.</h2>
+        <a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank" class="button1">Help now
+        </a><br><br>
     </div>
 
     <style>
@@ -214,20 +204,33 @@
             border-radius: 12px;
         }
 
-        .button2 {
+        .button1 {
             background-color: #3C6255;
             border: none;
             color: white;
-            width: 80%;
-            max-width: 200px;
+            width: 50%;
+            max-width: 100px;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 10px 2px;
+            margin: 4px 2px;
             cursor: pointer;
-            border-radius: 7px;
+            border-radius: 12px;
+        }
+
+        .button2 {
+            background-color: #61876E;
+            border: none;
+            color: white;
+            width: 80%;
+            max-width: 200px;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 15px;
+            border-radius: 15px;
         }
 
         .container {
@@ -256,6 +259,7 @@
 
         .button {
             margin: 10px;
+
         }
 
         .VnM {
@@ -267,8 +271,9 @@
         .Description {
             display: flex;
             flex-wrap: wrap;
-            justify-content: left;
-            margin: 200px 300px 100px 100px
+            justify-content: center;
+            margin-top: 200px;
+            padding: 0 100px 0 100px;
         }
 
         .container6 {
@@ -277,12 +282,20 @@
             justify-content: left;
             margin: px
         }
+
+        .title4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 200px;
+            margin: 100px 100px 0 100px;
+        }
     </style>
     </head>
 
     <body>
 
-        <h3 style="color:white;text-align:center">Annean Vission and Mission</h3>
+        <h3 style="color:white;text-align:center" class="title4">Annean Vission and Mission</h3>
 
         <div class="VnM">
             <a target="_blank" class="button2">Ste. Anne de Beaupré School envisions a world of
@@ -297,9 +310,11 @@
         <div class="class-description">
             <p class="small-font">Sainte Anne de Beaupre School is a private educational institution that caters
                 to the needs of both regular and special children.
-                Founded in 1974 by Miss Aurora T. Apuada, a Special Education (SPED) degree holder from the University
+                Founded in 1974 by Miss Aurora T. Apuada, a Special Education (SPED) degree holder from the
+                University
                 of the Philippines,
-                the school aims to provide a well-balanced educational program for the formation of individuals with
+                the school aims to provide a well-balanced educational program for the formation of individuals
+                with
                 moral virtues,
                 high-level intelligence and functional skills.</p>
         </div>
