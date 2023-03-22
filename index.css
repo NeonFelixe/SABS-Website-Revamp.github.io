@@ -27,6 +27,26 @@ nav ul {
     padding: 10px 20px;
 }
 
+@media (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 8px"
+
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
 nav li {
     margin: 0 10px;
 }
@@ -229,6 +249,16 @@ body {
     justify-content: left;
     margin-top: 250px;
     padding: 0 100px 0 100px;
+}
+
+@media (max-width: 767px) {
+    .Description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 0 50px 0 50px;
+    }
 }
 
 .container6 {
