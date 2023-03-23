@@ -37,14 +37,7 @@ h2 {
     color: white;
     text-align: center;
     font-size: 40px;
-    margin: 8px"
-
-}
-
-@media (max-width: 767px) {
-    h2 {
-        font-size: 20px;
-    }
+    margin: 8px
 }
 
 nav li {
@@ -251,27 +244,91 @@ body {
     padding: 0 100px 0 100px;
 }
 
+.descriph2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: normal;
+    padding: 1px 10px 10px 10px;
+}
+
 @media (max-width: 767px) {
     .Description {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 900px;
         padding: 0 50px 0 50px;
     }
-}
 
-.container6 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: px
-}
+    .title h1 {
+        margin: 0;
+        font-size: 20px;
+        color: #ffffff;
+        position: relative;
+    }
 
-.title4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 200px;
-    margin: 100px 100px 0 100px;
+    h2 {
+        font-size: 32px;
+    }
+
+
+    .small-font {
+        font-size: 12px;
+        color: #ffffff;
+        margin-bottom: 0px;
+        padding: 1px;
+    }
+
+    .descriph2 {
+        font-size: 12px;
+        text-align: center;
+        font-weight: normal;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .class-description {
+        display: flex;
+        padding: 20px 50px 20px 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .button1 {
+        background-color: #61876E;
+        border: none;
+        color: white;
+        width: 70%;
+        max-width: 100px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    .Description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 200px;
+        padding: 0 25px 0 25px;
+    }
+
+    .container6 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin: px
+    }
+
+    .title4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 200px;
+        margin: 100px 100px 0 100px;
+    }
 }

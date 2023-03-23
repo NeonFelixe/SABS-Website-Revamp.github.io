@@ -28,6 +28,12 @@ nav ul {
     padding: 10px 20px;
 }
 
+@media (max-width: 720px) {
+    nav ul {
+        display: none;
+    }
+}
+
 nav li {
     margin: 0 10px;
 }
@@ -100,6 +106,7 @@ body {
     color: #ffffff;
     margin-bottom: 0px;
     word-wrap: break-word;
+    justify-content: center;
 }
 
 footer {
@@ -197,6 +204,30 @@ body {
     display: flex;
     justify-content: center;
     margin: 0px
+}
+
+.container7 {
+    display: list-item;
+    justify-content: center;
+    margin: 20px
+}
+
+@media (max-width: 1030px) {
+    .my-image {
+        width: 200px;
+    }
+
+    .container2 {
+        display: none;
+    }
+}
+
+
+.my-image1 {
+    justify-content: center;
+    width: 400px;
+    padding: 10px;
+    border-radius: 80%;
 }
 
 .container3 {
