@@ -110,7 +110,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: scroll;
     background-color: #3C6255;
     color: #fff;
     padding: 10px 20px;
