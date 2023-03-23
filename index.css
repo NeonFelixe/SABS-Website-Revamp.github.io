@@ -256,7 +256,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 900px;
+        margin-top: 200;
         padding: 0 50px 0 50px;
     }
 
@@ -311,7 +311,7 @@ body {
 
     .Description {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
         margin-top: 200px;
         padding: 0 25px 0 25px;
