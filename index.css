@@ -303,7 +303,6 @@ body {
     }
 
     .button1 {
-        border: 2px solid #A6BB8D;
         background-color: #61876E;
         border: none;
         color: white;
@@ -337,8 +336,7 @@ body {
     }
 
     .button2 {
-        background-color: #A6BB8D;
-        border: 2px solid #61876E;
+        background-color: #61876E;
         border: none;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: white;
@@ -396,7 +394,7 @@ body {
 
 .popup-header {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .popup-description {

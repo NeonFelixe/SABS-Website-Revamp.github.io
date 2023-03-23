@@ -104,6 +104,25 @@
         </div>
     </footer>
 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="pictures/warning.png" alt="Warning sign">
+            <p class="popup-header">Currently Under Development</p>
+            <p class="popup-description">You may close this section.</p>
+            <button onclick="closeWindow()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        if (window.innerWidth > 768) {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function closeWindow() {
+            window.close();
+        }
+    </script>
 
 </body>
 
