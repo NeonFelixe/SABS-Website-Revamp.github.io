@@ -101,6 +101,7 @@ body {
 }
 
 footer {
+    position: fixed;
     background-color: #3C6255;
     color: #fff;
     padding: 10px 20px;
