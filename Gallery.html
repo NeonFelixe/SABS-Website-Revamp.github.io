@@ -99,23 +99,78 @@
                     <img src="pictures/16.jpg">
                 </div>
         </section>
+        <section class="upload">
+            <div class="gal-col">
+                <h1>Upload your own photo!</h1>
+                <p>You can upload any image now!</p>
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" name="image" id="image" style="display: none;">
+                    <label for="image" class="hero-btn">Upload Photo</label>
+                </form>
+            </div>
+        </section>
 
         <footer>
             <div class="bottom-bar" id="contact-info">
-                <p>Contact us: nf.cruz@sabs.edu.ph (Under Development)</p>
+                <p>Contact us: nf.cruz@sabs.edu.ph, neonfelixe@gmail.com (Under Development)</p>
             </div>
         </footer>
 
 
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <img src="pictures/warning.png" alt="Warning sign">
+                <p class="popup-header">Upload Error</p>
+                <p class="popup-description">Currently Under Development</p>
+                <button onclick="closePopup()">Okay</button>
+            </div>
+        </div>
         <script>
-            if (window.innerWidth > 10000) {
+            if (window.innerWidth) {
                 var popup = document.getElementById("popup");
                 popup.style.display = "block";
             }
 
-            function closeWindow() {
-                window.close();
+            function closePopup() {
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
             }
+        </script>
+
+        <script>
+            const uploadForm = document.getElementById("upload-form");
+            const fileInput = document.getElementById("image");
+
+            fileInput.addEventListener("change", function () {
+                // show popup here
+                const popup = document.getElementById("popup");
+                popup.style.display = "block";
+
+                // submit form
+                const formData = new FormData(uploadForm);
+                const request = new XMLHttpRequest();
+                request.open("POST", "/upload");
+                request.send(formData);
+
+                // handle response and hide popup
+                request.onload = function () {
+                    if (request.status === 200) {
+                        // display success message
+                        const successPopup = document.getElementById("success-popup");
+                        successPopup.style.display = "block";
+                    } else {
+                        // display error message
+                        const errorPopup = document.getElementById("error-popup");
+                        errorPopup.style.display = "block";
+                    }
+
+                    // hide popup
+                    popup.style.display = "none";
+                }
+            });
+        </script>
+
         </script>
         <script>
             var navLinks = document.getElementById("navLinks");
@@ -126,6 +181,16 @@
                 navLinks.style.right = "-210px";
             }
         </script>
+        <script>
+            const form = document.getElementById("upload-form");
+            const input = document.getElementById("image");
+
+            input.addEventListener("change", () => {
+                form.submit();
+            });
+
+        </script>
+
 
 </body>
 
