@@ -2,97 +2,154 @@
 <html>
 
 <head>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <title>Ste. Anne de Beaupré School, Inc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-h2GnEOR9eQltNn1+E/lwMQsn+ZJxgeUG3+LrCp/1FSpqlOd+hJ9AmBCgKv5zCvvbdl5p5Hy+KjCA01YazKGpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
+
 </head>
 
 <body>
-    <nav>
-        <div class="title">
-            <img src="pictures/logo.png" alt="Logo" class="logo">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="pictures/logo.png"></a>
             <h1>Ste. Anne de Beaupré School</h1>
-        </div>
-        <ul>
-            <li><a style="font-weight: bold; border-bottom: 3px solid white; border-radius: 2px;" href="#Home">Home</a>
-            </li>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Schedule</a></li>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-            <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="Description">
-        <h2>Experience The New SABS</h2>
-        <h2 class="descriph2">Welcome to the fork of the official Website of Ste. Anne de Beaupre School. This
-            website is designed to look more modern and user-friendly, with new features made specifically for students.
-            This website is full of upcoming features! Want to see your face? Click to access the gallery
-            tab!</h2>
-        <a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html" target="_blank"
-            class="button1">Gallery
-        </a><br><br>
-    </div>
-    </head>
-
-    <body>
-
-        <h3 class="title4">Annean Vission and Mission</h3>
-
-        <div class="VnM">
-            <a target="_blank" class="button2">Ste. Anne de Beaupré School envisions a world of
-                proactive Filipino leaders that make the world a better
-                place both in the eyes of God and man.</a><br><br>
-            <a target="_blank" class="button2">Ste. Anne de Beaupré School offers a well-balanced
-                educational program for the formation of individuals
-                with moral virtues, high-level intelligence and
-                functional skills.</a><br><br>
-        </div>
-
-        <div class="class-description">
-            <p class="small-font">Sainte Anne de Beaupre School is a private educational institution that caters
-                to the needs of both regular and special children.
-                Founded in 1974 by Miss Aurora T. Apuada, a Special Education (SPED) degree holder from the
-                University
-                of the Philippines,
-                the school aims to provide a well-balanced educational program for the formation of individuals
-                with
-                moral virtues,
-                high-level intelligence and functional skills.</p>
-        </div>
-
-        <div class="vision" id="schedule"></div>
-
-
-
-        <footer>
-            <div class="bottom-bar" id="contact-info">
-                <p>Contact us: nf.cruz@sabs.edu.ph (Under Development)</p>
+            <div class="nav-links" id="navLinks">
+                <img src="icons/cancel.svg" class="cancelmenu" onclick="hideMenu()">
+                <ul>
+                    <li><a href=" https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Home</a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Schedule</a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="#contact-info">Contact</a></li>
+                    <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About
+                            us</a>
+                </ul>
             </div>
-        </footer>
+            <img src="icons/menu.svg" class="menu" onclick="showMenu()">
 
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <img src="pictures/warning.png" alt="Warning sign">
-                <p class="popup-header">Mobile screen detected</p>
-                <p class="popup-description">Please use a computer to access full features.</p>
-                <button onclick="closePopup()">Continue</button>
+        </nav>
+
+        <div class="text-box">
+            <h1>Experience <br>The New SABS</h1>
+            <p>Welcome to the fork of the official Website of Ste. Anne de Beaupre School. This
+                website is designed to look more modern and user-friendly, with new features made specifically for
+                students.
+            </p>
+            <a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html" target="_blank"
+                class="hero-btn">Gallery
+            </a>
+        </div>
+    </section>
+
+
+    <section class="course">
+        <h1>STRANDS We Offers</h1>
+        <p>Welcome to the fork of the official Website</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>STEM</h3>
+                <p>Science, Technology, Engineering and Mathematics, and it prepares students for careers in scientific
+                    and technical fields.</p>
+            </div>
+            <div class="course-col">
+                <h3>ABM</h3>
+                <p>Accountancy, Business and Management, and it prepares students for careers in finance, commerce and
+                    entrepreneurship</p>
+            </div>
+            <div class="course-col">
+                <h3>HUMMS</h3>
+                <p>HUMS stands for Humanities and Social Sciences, and it prepares students for careers in arts, culture
+                    and education.</p>
             </div>
         </div>
-        <script>
-            if (window.innerWidth < 768) {
-                var popup = document.getElementById("popup");
-                popup.style.display = "block";
-            }
+        <div>
+            <a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html" target="_blank"
+                class="adm-btn">Learn More
+            </a>
+        </div>
+    </section>
 
-            function closePopup() {
-                var popup = document.getElementById("popup");
-                popup.style.display = "none";
-            }
-        </script>
-    </body>
 
-</html>
+    <section class="campus">
+        <h1>SABS Campus</h1>
+        <p>Welcome to the fork of the official Website</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="pictures/sabsnight.jpg" alt="sabsnight">
+                <div class="layer">
+                    <h3>Annex Campus</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="pictures/sped.jpg" alt="spedcmpus">
+                <div class="layer">
+                    <h3>SPED Campus</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="pictures/sabsnight.jpg" alt="sabsnight">
+                <div class="layer">
+                    <h3>Main Campus</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="hiring">
+        <h1>Join our team!</h1>
+        <p>We are hiring professional teachers for various subjects and levels, from kindergarten to high school.
+        </p>
+        <div class="hired">
+            <div class="Qualify">
+                <h3>Qualifications</h3>
+                <p>- Graduate of Bsed, or Educ. units <br>
+                    - male or female<br>
+                    - With pleasing personality<br>
+                    - With strong English and Filipino communications
+                    - Knowledgable in photo and video editing (Digital arts)<br>
+                    - Computer Literats</p>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        if (window.innerWidth < 1080) {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-210px";
+        }
+    </script>

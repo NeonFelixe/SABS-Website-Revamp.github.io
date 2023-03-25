@@ -2,20 +2,37 @@
 :after {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+
 }
+
+
 
 @font-face {
     font-family: 'Cooper Black FS';
     src: url('fonts/Cooper.ttf');
 }
 
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 22, 9, 0.815), rgba(0, 0, 0, 0.664)), url('/pictures/sabs.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1 {
+    font-family: 'Cooper Black FS', Roboto;
+    margin: 0;
+    font-size: 30px;
+    color: #EAE7B1;
+    position: relative;
+}
 
 nav {
-    backdrop-filter: blur(10px);
-    background-color: #3c6255b7;
-    transition: background-color 0.5s ease;
+    background-color: #3c6255c9;
     display: flex;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -25,33 +42,31 @@ nav {
     right: 0;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px)
 }
-
-nav.scrolling-active {
-    background-color: #3C6255;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-}
-
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: flex-end;
     padding: 10px 20px;
 }
 
-@media (max-width: 767px) {
-    nav ul {
-        display: none;
-    }
+nav img {
+    width: 70px;
 }
 
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin: 8px 8px 8px 17px
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 0px 8px;
+    position: relative;
 }
 
 nav li {
@@ -62,309 +77,348 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
+    font-size: 15px;
 }
 
 nav a::after {
     content: "";
     position: absolute;
-    background-color: #61876E;
+    background-color: white;
     height: 3px;
-    width: 0;
+    width: 0%;
     left: 0;
     bottom: -2px;
+    margin: auto;
+    transition: 0.3s;
 }
 
 nav a:hover::after {
     width: 100%;
-    transition: width 0.3s linear;
     margin-top: 8px;
 }
 
-.logo {
-    height: 50px;
-    margin-right: 10px;
+.menu {
+    display: none;
 }
 
-.title {
-    float: left;
+.cancelmenu {
+    display: none;
+}
+
+
+.text-box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-    align-items: center;
-}
-
-.title h1 {
-    font-family: 'Cooper Black FS', sans-serif;
-    margin: 0;
-    font-size: 30px;
-    color: #EAE7B1;
-    position: relative;
-}
-
-.contact {
-    float: right;
-    width: 50%;
-    max-width: 100%;
-    padding: 20px;
-}
-
-body {
-    background-image: linear-gradient(to bottom, rgba(0, 22, 9, 0.815), rgba(0, 0, 0, 0.664)), url('/pictures/sabs.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    margin: 0;
-    max-width: 100%;
-
-}
-
-.class-description {
-    display: flex;
-    padding: 20px 100px 20px 100px;
-    text-align: center;
+    flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
 }
 
-.small-font {
+.text-box h1 {
+    font-family: 'Cooper Black FS', Roboto;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 8px 8px 8px 8px
+}
+
+.text-box p {
     font-size: 16px;
-    color: #ffffff;
-    margin-bottom: 0px;
-    word-wrap: break-word;
-}
-
-footer {
-    position: scroll;
-    background-color: #3C6255;
     color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-}
-
-footer ul {
-    list-style: none;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
     margin: 0;
-    padding: 0;
-    display: flex;
+    margin-bottom: 20px;
 }
 
-footer li {
-    margin: 0 10px;
-}
-
-footer a {
-    color: #fff;
+.hero-btn {
+    background-color: #61876E;
+    border: none;
+    color: white;
+    width: 80px;
+    padding: 15px 15px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+    transition: 0.3s;
+    padding: 15px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.adm-btn {
+    background-color: #61876E;
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px 4px 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adm-btn:hover {
+    transition: 0.3s;
+    padding: 15px 32px;
+    font-size: 20px;
+    width: 120px;
     font-weight: bold;
 }
 
+/*---- course ----*/
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #EAE7B1;
+    font-family: 'Cooper Black FS', Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 1px;
+    margin: 14px 14px 16px 14px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #61876E;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px 0px 0px;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0px;
+    color: white;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.336);
+}
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    transition: 0.5;
+}
+
+.campus-col:hover {
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.336);
+}
+
+.hiring {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hired {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.Qualify {
+    flex-basis: 31%;
+    background: #61876E;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px 0px 0px;
+    transition: 0.5s;
+}
+
+.Teacher {
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px 0px 0px;
+    transition: 0.5s
+}
+
+
+
+
+
 
 body {
-    background-image: linear-gradient(to bottom, rgba(0, 22, 9, 0.815), rgba(0, 0, 0, 0.664)), url('pictures/sabs.jpg');
     font-family: Arial, sans-serif;
+    background-color: #3C6255;
     margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.button {
-    background-color: #61876E;
-    border: none;
-    color: white;
-    width: 50%;
-    max-width: 100px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
+.layer {
+    padding: 10px;
 }
 
-.button1 {
-    background-color: #61876E;
-    border: none;
-    color: white;
-    width: 80;
-    max-width: 100px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 4px 4px 17.5px;
-    cursor: pointer;
-    border-radius: 40px;
+
+nav .fa {
+    display: none;
 }
 
-.button2 {
-    background-color: #61876E;
-    border: none;
-    color: white;
-    width: 80%;
-    max-width: 200px;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    margin: 15px;
-    border-radius: 15px;
+@media(max-width: 820px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .hired {
+        flex-direction: column;
+    }
 }
 
-.container {
-    display: flex;
-    flex-direction: row
-}
+@media (max-width: 1050px) {
+    .header nav h1 {
+        font-size: 20px;
+    }
 
-.container3 {
-    display: flex;
-    justify-content: center;
-    margin: 50px
-}
+    .logo {
+        width: 60px;
+    }
 
-.container1 {
-    display: flex;
-    justify-content: center;
-    margin: 0px
-}
+    .menu {
+        display: flex;
+        width: 20px;
+        cursor: pointer;
+    }
 
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1px 1px 1px 1px
-}
+    .cancelmenu {
+        display: flex;
+        width: 20px;
+        cursor: pointer;
+        padding: 20px;
+    }
 
-.button {
-    margin: 10px;
-
-}
-
-.VnM {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.Description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-top: 250px;
-    padding: 0 100px 0 100px;
-}
-
-.descriph2 {
-    font-size: 16px;
-    text-align: left;
-    font-weight: normal;
-    padding: 1px 1px 15px 1px;
-}
-
-.title4 {
-    color: white;
-    text-align: center;
-    padding: 100px 0px 1px 0px
-}
-
-@media (max-width: 767px) {
-    .Description {
+    .text-box {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 150px;
+        /* margin-top: 150px; */
         padding: 0 25px 0 25px;
     }
 
-    .title h1 {
-        margin: 0;
-        font-size: 20px;
+    .text-box h1 {
+        font-family: 'Cooper Black FS', Roboto;
+        font-size: 36px;
+        margin-top: 50px;
+        padding: 7px;
+        font-weight: 600;
+    }
+
+    .text-box p {
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 15px;
+        text-align: center;
         color: #ffffff;
         position: relative;
     }
 
-    h2 {
-        font-size: 30px;
-        padding: 10px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-
-    .small-font {
-        font-size: 12px;
-        color: #ffffff;
-        margin-bottom: 0px;
-        padding: 1px;
-        margin: 1px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .descriph2 {
-        font-size: 12px;
+    .nav-links ul {
+        display: block;
+        font-size: 40px;
         text-align: center;
-        font-weight: normal;
-        padding: 0px 0px 10px 0px;
     }
 
-    .class-description {
-        display: flex;
-        padding: 20px 50px 20px 50px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .button1 {
-        background-color: #61876E;
-        border: none;
-        color: white;
-        width: 80px;
-        max-width: 100px;
-        padding: 15px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 5px 30px;
-        cursor: pointer;
+    .nav-links ul li a {
         border-radius: 20px;
+        border-style: solid;
+        border-color: #61876E;
+        margin: 0px;
     }
 
-    .container6 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        margin: px
+    .nav-links ul li {
+        margin: 0px;
     }
 
-    .title4 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 25;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: 0px 100px 0px 100px;
-        padding: 70px 0px 20px 0px
+    .nav-links {
+        position: absolute;
+        background: #3c6255;
+        height: 99.3vh;
+        width: 150px;
+        top: 0vh;
+        right: -220px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        border-style: solid;
+        border-color: #61876E;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
     }
 
-    .button2 {
-        background-color: #61876E;
-        border: none;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: white;
-        width: 80%;
-        max-width: 200px;
-        padding: 20px;
-        text-align: center;
-        font-size: 14px;
-        margin: 3px;
-        border-radius: 15px;
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
+
+    .nav-links ul {
+        padding: 0;
+    }
+
 }
 
 .popup {
