@@ -224,6 +224,12 @@ p {
     justify-content: space-between;
 }
 
+.hiring .row {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
 .course-col {
     flex-basis: 31%;
     background: #61876E;
@@ -289,6 +295,10 @@ h3 {
     padding: 0px;
 }
 
+.hiring p {
+    margin-bottom: 20px;
+}
+
 .Qualify {
     flex-basis: 31%;
     background: #61876E;
@@ -317,6 +327,21 @@ h3 {
     margin: 14px 14px 14px 14px;
 }
 
+
+footer {
+    position: scroll;
+    background-color: #3C6255;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
 
 body {
     font-family: Arial, sans-serif;
