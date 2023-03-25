@@ -12,8 +12,7 @@ We have decided to embark on this project to redesign and rebuild our school's w
 **Modernized Design** link: https://neonfelixe.github.io/SABS-Website-Revamp.github.io/
 
 Mobile:
-![image](https://user-images.githubusercontent.com/101835293/227713973-6e3a1e2f-d4df-44bf-bf87-60ff7361fcb0.png)
-![image](https://user-images.githubusercontent.com/101835293/227713996-38b77f5d-0ed1-4e09-a29a-0132508f1bdf.png)
+![image](https://user-images.githubusercontent.com/101835293/227714175-0f13075e-b60a-409a-91d0-a46b5af31fc0.png)
 
 Desktop:
 ![image](https://user-images.githubusercontent.com/101835293/227714028-3811b73f-f235-4183-9ecb-4668fe76caf7.png)
