@@ -2,127 +2,130 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="gallery.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gallery.css">
-    <title>Ste. Anne de Beaupré School</title>
+    <script src="index.js"></script>
+    <title>Ste. Anne de Beaupré School, Inc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
+
 </head>
 
 <body>
-    <!-- add the nav tag for the menu bar -->
-    <nav>
-        <div class="title">
-            <img src="pictures/logo.png" alt="Logo" class="logo">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="pictures/logo.png"></a>
             <h1>Ste. Anne de Beaupré School</h1>
-        </div>
-        <ul>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a></li>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Schedule</a></li>
-            <li><a style="font-weight: bold; border-bottom: 3px solid white; border-radius: 2px;"
-                    href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
-            </li>
-            <li><a href="#contact-info">Contact</a></li>
-            <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a></li>
-        </ul>
-    </nav>
+            <div class="nav-links" id="navLinks">
+                <img src="icons/cancel.svg" class="cancelmenu" onclick="hideMenu()">
+                <ul>
+                    <li><a href=" https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">Home</a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Schedule.html">About</a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Contact
+                        </a>
+                    </li>
+                    <li><a href="#contact-info">Gallery</a></li>
+                    <li><a href="#contact-info">More</a></li>
+            </div>
+            <img src="icons/menu.svg" class="menu" onclick="showMenu()">
 
-    <div class="container1">
-        <h2 style="color:white;text-align:center"><a href="https://classroom.google.com/h" target="_blank"
-                style="color:white; text-decoration:none;">Gallery</a></h2>
-    </div>
+        </nav>
+        <section class="gallery">
+            <h1>Gallery</h1>
+            <p>Welcome to the fork of the Ste. Anne de Beaupré School</p>
+            <div class="row">
+                <div class="gal-col">
+                    <img src="pictures/1.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/2.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/3.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/4.jpg">
+                </div>
+        </section>
 
-    <div class="class-description1">
-        <p class="small-font">Grade 11 Bill-Gates</p>
-    </div>
+        <section class="gallery">
+            <div class="row">
+                <div class="gal-col">
+                    <img src="pictures/5.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/6.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/7.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/8.jpg">
+                </div>
+        </section>
 
-    <div class="container2">
-        <img src="pictures/1.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/2.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/3.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
+        <section class="gallery">
+            <div class="row">
+                <div class="gal-col">
+                    <img src="pictures/9.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/10.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/11.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/12.jpg">
+                </div>
+        </section>
 
-    <div class="container2">
-        <img src="pictures/4.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/5.jpeg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/6.jpeg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
+        <section class="gallery">
+            <div class="row">
+                <div class="gal-col">
+                    <img src="pictures/13.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/14.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/15.jpg">
+                </div>
+                <div class="gal-col">
+                    <img src="pictures/16.jpg">
+                </div>
+        </section>
 
-    <div class="container2">
-        <img src="pictures/7.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/8.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/9.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
-    <div class="container2">
-        <img src="pictures/10.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/11.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/12.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
-    <div class="container2">
-        <img src="pictures/13.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
-    <div class="container2">
-        <img src="pictures/13.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
-    <div class="container2">
-        <img src="pictures/13.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image" style="border-radius: 20px" alt="gallery">
-    </div>
-    </head>
+        <footer>
+            <div class="bottom-bar" id="contact-info">
+                <p>Contact us: nf.cruz@sabs.edu.ph (Under Development)</p>
+            </div>
+        </footer>
 
-    <div class="container7">
-        <img src="pictures/1.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/2.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/3.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/4.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/5.jpeg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/6.jpeg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/7.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/8.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/9.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/10.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/11.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/12.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/13.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/13.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/13.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/14.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-        <img src="pictures/15.jpg" class="my-image1" style="border-radius: 20px" alt="gallery">
-    </div>
 
-    <footer>
-        <div class="bottom-bar" id="contact-info">
-            <p>Contact us: nf.cruz@sabs.edu.ph (Under Development)</p>
-        </div>
-    </footer>
+        <script>
+            if (window.innerWidth > 10000) {
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+            }
 
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <img src="pictures/warning.png" alt="Warning sign">
-            <p class="popup-header">Currently Under Development</p>
-            <p class="popup-description">You may close this section.</p>
-            <button onclick="closeWindow()">Close</button>
-        </div>
-    </div>
-
-    <script>
-        if (window.innerWidth > 1000) {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-
-        function closeWindow() {
-            window.close();
-        }
-    </script>
+            function closeWindow() {
+                window.close();
+            }
+        </script>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0px";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-210px";
+            }
+        </script>
 
 </body>
 
