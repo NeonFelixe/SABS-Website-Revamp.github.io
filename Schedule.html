@@ -2,40 +2,45 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="schedule.css">
+    <script src="schedule.js"></script>
     <title>Ste. Anne de Beaupré School, Inc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
+
 </head>
 
-
 <body>
-    <!-- add the nav tag for the menu bar -->
-    <nav>
-        <div class="title">
-            <img src="pictures/logo.png" alt="Logo" class="logo">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="pictures/logo.png"></a>
             <h1>Ste. Anne de Beaupré School</h1>
+            <div class="nav-links" id="navLinks">
+                <img src="icons/cancel.svg" class="cancelmenu" onclick="hideMenu()">
+                <ul>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a>
+                    </li>
+                    <li><a href="About">About</a>
+                    </li>
+                    <li><a href="#contact">Contact
+                        </a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="#contact-info">More</a></li>
+            </div>
+            <img src="icons/menu.svg" class="menu" onclick="showMenu()">
+        </nav>
+
+        <div class="text-box">
+            <h1><a href="https://classroom.google.com/h" target="_blank"
+                    style="color:white; text-decoration:none;">Online Classes Meet Links</a></h1>
+            <p class="small-font">The following buttons are designed to provide you with quick and convenient
+                access to the relevant links.</p>
         </div>
-        <ul>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a></li>
-            <li><a style="font-weight: bold; border-bottom: 3px solid white; border-radius: 2px;"
-                    href="#schedule">Schedule</a></li>
-            <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
-            </li>
-            <li><a href="#contact-info">Contact</a></li>
-            <li><a href="https://github.com/NeonFelixe/SABS-Website-Revamp.github.io" target="_blank">About us</a></li>
-        </ul>
-    </nav>
-
-    <div class="container1">
-        <h2 style="color:white;text-align:center"><a href="https://classroom.google.com/h" target="_blank"
-                style="color:white; text-decoration:none;">Online Classes Meet Links</a></h2>
-    </div>
-
-    <div class="class-description1">
-        <p class="small-font">The following buttons are designed to provide you with quick and convenient
-            access to the relevant links.</p>
-    </div>
+    </section>
 
     <div class="container2">
         <a href="http://meet.google.com/bsw-aehj-dww?authuser=0&hs=179" target="_blank"
