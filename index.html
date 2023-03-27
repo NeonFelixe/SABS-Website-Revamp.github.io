@@ -20,9 +20,10 @@
             <div class="nav-links" id="navLinks">
                 <img src="icons/cancel.svg" class="cancelmenu" onclick="hideMenu()">
                 <ul>
-                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html"
+                            style="font-weight: bold; color: #EAE7B1;">Home</a>
                     </li>
-                    <li><a href="About">About</a>
+                    <li><a href="#About">About</a>
                     </li>
                     <li><a href="#contact">Contact
                         </a>
@@ -48,7 +49,7 @@
 
     <section class="course">
         <h1>STRANDS We Offer</h1>
-        <p>Welcome to the fork of the official Website</p>
+        <p>Senior High School Students</p>
 
         <div class="row">
             <div class="course-col">
@@ -63,8 +64,24 @@
             </div>
             <div class="course-col">
                 <h3>HUMSS</h3>
-                <p>HUMS stands for Humanities and Social Sciences, and it prepares students for careers in arts, culture
+                <p>HUMSS stands for Humanities and Social Sciences, and it prepares students for careers in arts,
+                    culture
                     and education.</p>
+            </div>
+        </div>
+    </section>
+    <section class="course-section2">
+        <div class="row-section2">
+            <div class="course-col3">
+                <h3>ICT</h3>
+                <p>ICT stands for Information and Communication Technology, and it prepares students for careers in
+                    computing, media and engineering.
+                </p>
+            </div>
+            <div class="course-col3">
+                <h3>Bread and Pastry<br> Making</h3>
+                <p> Stands for Baking and Pastry Arts, and it prepares students for careers in food service, hospitality
+                    and culinary arts.</p>
             </div>
         </div>
         <div>
@@ -109,7 +126,6 @@
         </p>
         <div class="Qualify">
             <img src=" pictures/enrollees.png" alt="sabsnight">
-            <h3>Enroll Now!</h3>
         </div>
     </section>
 
@@ -121,9 +137,6 @@
     </footer>
 
     <div class="floating-button" onclick="toggleWindow()">
-        <img src="icons/vision.png" alt="vision">
-    </div>
-    <div class="floating-window">
         <img src="icons/vision.png" alt="vision">
     </div>
 
@@ -146,6 +159,13 @@
             } else {
                 floatingButton.innerHTML = '<img src="icons/vision.png" alt="vision">';
             }
+        });
+    </script>
+
+    <script>
+        window.addEventListener('load', () => {
+            const floatingButton = document.querySelector('.floating-button');
+            floatingButton.click();
         });
     </script>
 

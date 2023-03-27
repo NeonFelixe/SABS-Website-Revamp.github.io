@@ -9,6 +9,7 @@
   src: url("fonts/CPR.ttf");
 }
 
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -156,11 +157,7 @@ nav a:hover::after {
 }
 
 .hero-btn:hover {
-  transition: 0.3s;
-  padding: 15px 32px;
-  font-size: 20px;
-  font-weight: bold;
-  width: 100px;
+  transform: scale(1.2);
 }
 
 .adm-btn {
@@ -181,11 +178,7 @@ nav a:hover::after {
 }
 
 .adm-btn:hover {
-  transition: 0.3s;
-  padding: 15px 32px;
-  font-size: 20px;
-  width: 120px;
-  font-weight: bold;
+  transform: scale(1.2);
 }
 
 /*---- course ----*/
@@ -194,7 +187,46 @@ nav a:hover::after {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 0;
+}
+
+.course-section2 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0;
+}
+
+.row-section2{
+  margin-top: 0%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.course-col3 {
+  flex-basis: 40%;
+  background: #61876e;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  transition: 0.2s;
+  margin-bottom: 5%;
+}
+
+.course-col3:hover {
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.336);
+  transform: scale(1.1);
+}
+
+.course-col3 h3{
+  font-family: "Cooper Black", Roboto;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 h1 {
@@ -216,8 +248,9 @@ p {
 }
 
 .row {
-  margin-top: 5%;
+  margin-top: 0%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -231,12 +264,13 @@ p {
   flex-basis: 31%;
   background: #61876e;
   border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 0px 0px 0px;
-  transition: 0.5s;
+  margin-bottom: 3%;
+  padding: 20px px 0px 0px;
+  transition: 0.2s;
 }
 
 .course-col h3 {
+  font-family: "Cooper Black", Roboto;
   text-align: center;
   font-weight: 600;
   margin-top: 25px;
@@ -253,6 +287,7 @@ h3 {
 
 .course-col:hover {
   box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.336);
+  transform: scale(1.1);
 }
 
 .campus {
@@ -361,7 +396,6 @@ body {
   flex-direction: column;
 }
 
-
 .layer {
   padding: 10px;
 }
@@ -373,6 +407,18 @@ nav .fa {
 @media (max-width: 767px) {
   .row {
     flex-direction: column;
+  }
+
+  .row-section2{
+    flex-direction: column;
+  }
+
+  .course-col3{
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 3%;
+  }
+  .course-section2{
+    width: 80%;
   }
 
   .hired {
@@ -436,6 +482,10 @@ nav .fa {
     padding: 20px;
   }
 
+  .cancelmenu:hover {
+    transform: scale(1.2);
+  }
+
   .text-box {
     display: flex;
     flex-wrap: wrap;
@@ -485,7 +535,7 @@ nav .fa {
     top: 0vh;
     right: -220px;
     text-align: left;
-    z-index: 2;
+    z-index: 99999;
     transition: 0.5s;
     border-style: solid;
     border-color: #61876e;
@@ -572,18 +622,24 @@ nav .fa {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #61876E;
+  background-color: #61876e;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.582);
   color: white;
   text-align: center;
   font-size: 30px;
   cursor: pointer;
   transition: 0.4s;
   border-style: solid;
-  border-color: #A6BB8D;
+  border-color: #a6bb8d;
   user-select: none;
+  z-index: 9999;
 }
 
-.floating-button img{
+.floating-button:hover {
+  transform: scale(1.1); /* Make the button 20% bigger */
+}
+
+.floating-button img {
   width: 30px;
   position: absolute;
   display: flex;
@@ -597,18 +653,28 @@ nav .fa {
   width: 220px;
   height: 450px;
   border-radius: 20px;
-  background-color: #61876E;
-  border-color: #A6BB8D;
+  background-color: #61876e;
+  border-color: #a6bb8d;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.582);
   user-select: none;
+  margin-bottom: 50px;
 }
-.floating-window img{
+
+.floating-button.floating-window + .floating-window {
+  display: block;
+}
+
+.floating-window img {
   display: none;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .floating-button-content {
@@ -616,13 +682,13 @@ nav .fa {
   font-size: 12px;
 }
 
-.floating-button h1{
+.floating-button h1 {
   margin: 10px;
 }
 
-.floating-button-content p{
+.floating-button-content p {
   margin-bottom: 30px;
 }
-.floating-button-content h1{
+.floating-button-content h1 {
   margin-top: 25px;
 }
