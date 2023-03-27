@@ -39,14 +39,12 @@
             <p>Welcome to the fork of the official Website of Ste. Anne de Beaupre School. <br>This
                 website is designed to look more modern and user-friendly, with new features made specifically for
                 students.<br>
-                Access the Gallery now!
             </p>
             <a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html" target="_blank"
                 class="hero-btn">Gallery
             </a>
         </div>
     </section>
-
 
     <section class="course">
         <h1>STRANDS We Offer</h1>
@@ -115,7 +113,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="bottom-bar" id="contact-info">
             <p>Contact us: nf.cruz@sabs.edu.ph, neonfelixe@gmail.com (Under Development)</p>
@@ -123,6 +120,34 @@
         </div>
     </footer>
 
+    <div class="floating-button" onclick="toggleWindow()">
+        <img src="icons/vision.png" alt="vision">
+    </div>
+    <div class="floating-window">
+        <img src="icons/vision.png" alt="vision">
+    </div>
+
+    <script>
+        const floatingButton = document.querySelector('.floating-button');
+        floatingButton.addEventListener('click', () => {
+            floatingButton.classList.toggle('floating-window');
+            if (floatingButton.classList.contains('floating-window')) {
+                floatingButton.innerHTML += `
+      <section class="floating-button-content">
+        <h1>Vision</h1>
+        <p>Ste. Anne de Beaupré School envisions a world of proactive Filipino leaders that make the
+             world a better place both in the eyes of God and man.</p
+      </section>
+      <section class="floating-button-content">
+        <h1>Mission</h1>
+        <p>Ste. Anne de Beaupré School provides a well-balanced educational program for the formation of individuals with 
+        moral virtues, high-level intelligence and functional skills.</p
+      </section>`;
+            } else {
+                floatingButton.innerHTML = '<img src="icons/vision.png" alt="vision">';
+            }
+        });
+    </script>
 
     <script>
         if (window.innerWidth < 1080) {
