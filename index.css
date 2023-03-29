@@ -11,12 +11,14 @@
 
 
 .header {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   background-image: url("pictures/sabs2.png");
   background-position: center;
   background-size: cover;
   position: relative;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
@@ -53,7 +55,7 @@ nav ul {
 }
 
 nav img {
-  width: 70px;
+  width: 60px;
 }
 
 .nav-links {
@@ -236,6 +238,7 @@ h1 {
   font-weight: 600;
   color: #fff;
   font-weight: normal;
+  margin-top: 0px;
 }
 
 p {
