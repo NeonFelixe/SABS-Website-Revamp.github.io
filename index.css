@@ -408,6 +408,9 @@ nav .fa {
 }
 
 @media (max-width: 767px) {
+  .header{
+    min-height: 95vh;
+  }
   .row {
     flex-direction: column;
   }
