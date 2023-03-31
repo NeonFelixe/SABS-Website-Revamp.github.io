@@ -13,7 +13,7 @@
 .header {
   min-height: 75vh;
   width: 100%;
-  background-image: url("pictures/sabs2.png");
+  background-image: linear-gradient(to bottom, black, transparent), url("pictures/sabsnight.jpg"); 
   background-position: center;
   background-size: cover;
   position: relative;
@@ -320,7 +320,7 @@ h3 {
 .hiring {
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding-top: 50px;
 }
 
@@ -332,7 +332,8 @@ h3 {
 }
 
 .hiring p {
-  margin-bottom: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .Qualify {
@@ -377,15 +378,15 @@ h3 {
 }
 
 .bottom-bar {
-  height: 30vh;
+    height: 30vh;
 }
 
 .bottom-bar h2{
-  margin-left: 10px;
-  font-family: "Cooper Black", Roboto;
-  font-size: 20px;
-  text-align: left;
-  font-weight: 600;
+    margin-left: 10px;
+    font-family: "Cooper Black", Roboto;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
 
 }
 
