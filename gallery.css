@@ -144,7 +144,7 @@ nav a:hover::after {
 .gal-col img {
   height: 220px;
   width: 300px;
-  border-radius: 15px;
+  border-radius: 0px;
   transition: 0.5s;
 }
 

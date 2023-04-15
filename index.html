@@ -40,8 +40,7 @@
                 website is designed to look more modern and user-friendly, with new features made specifically for
                 students.<br>
             </p>
-            <a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html" target="_blank"
-                class="hero-btn">Gallery
+            <a target="_blank" onclick="showPopup()" class="hero-btn">Access key
             </a>
         </div>
     </section>
@@ -119,7 +118,7 @@
                 </div>
             </div>
             <div class="campus-col">
-                <img src="pictures/sabsnight.jpg" alt="sabsnight">
+                <img src="pictures/sabsmain.jpg" alt="sabsnight">
                 <div class="layer">
                     <h3>Main Campus</h3>
                 </div>
@@ -191,4 +190,41 @@
         function hideMenu() {
             navLinks.style.right = "-210px";
         }
+    </script>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="pictures/warning.png" alt="Warning sign">
+            <p class="popup-header">You're about to enter in Dark Portal</p>
+            <p class="popup-description">Enter the access code to continue.</p>
+            <form>
+                <input type="text" id="access-code" placeholder="Access code">
+                <div class="popup-buttons">
+                    <button onclick="checkAccessCode()">Login</button>
+                    <button onclick="closePopup()">Exit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var popup = document.getElementById("popup");
+
+        function showPopup() {
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            popup.style.display = "none";
+        }
+
+        function checkAccessCode() {
+            var accessCode = document.getElementById("access-code").value;
+            if (accessCode === "1120252") { // replace "myaccesscode" with your actual access code
+                window.open("https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html", "_blank");
+            } else {
+                alert("Invalid access code. Please try again.");
+            }
+        }
+
     </script>

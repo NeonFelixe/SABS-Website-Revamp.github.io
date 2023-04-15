@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="answerkey.css">
+    <title>Dark Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="pictures/logo.png"></a>
+            <h1>Ste. Anne de Beaupré School</h1>
+            <div class="nav-links" id="navLinks">
+                <img src="icons/cancel.svg" class="cancelmenu" onclick="hideMenu()">
+                <ul>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/index.html">Home</a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/about.html">About</a>
+                    </li>
+                    <li><a href="#contact">Contact
+                        </a>
+                    </li>
+                    <li><a href="https://neonfelixe.github.io/SABS-Website-Revamp.github.io/Gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="#contact-info">More</a></li>
+            </div>
+            <img src="icons/menu.svg" class="menu" onclick="showMenu()">
+        </nav>
+
+        <div class="text-box">
+            <h1>Dark Portal <br>The New SABS</h1>
+            <p>A secret portal that contains all the confidential content within the
+                school. Here you will find worksheets answer key, leaked chats and more.<br>
+            </p>
+            <a href="" target="_blank" class="hero-btn-dark">Continue
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-210px";
+        }
+    </script>
