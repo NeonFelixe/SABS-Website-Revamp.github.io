@@ -221,10 +221,19 @@
         function checkAccessCode() {
             var accessCode = document.getElementById("access-code").value;
             if (accessCode === "1120252") { // replace "myaccesscode" with your actual access code
-                window.open("https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html", "_blank");
+                window.open("https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html", "_blank")
+                popup.click();
             } else {
                 alert("Invalid access code. Please try again.");
             }
         }
+        // Detect if the user is on a mobile device
+        function isMobile() {
+            return /Mobi/.test(navigator.userAgent);
+        }
 
+        // Open the link in the browser on mobile devices
+        if (isMobile()) {
+            popupLink.setAttribute("href", "https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html");
+        }
     </script>
