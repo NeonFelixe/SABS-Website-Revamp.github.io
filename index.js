@@ -1,8 +1,11 @@
 
 // Hide the loading animation when the page has finished loading
 window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
-});
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+    }, 1000)
+    });
+
 
 // for floating button (vision and mission)
 const floatingButton = document.querySelector('.floating-button');
