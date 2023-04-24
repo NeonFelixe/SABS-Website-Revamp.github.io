@@ -563,6 +563,18 @@ nav .fa {
 }
 
 @media (max-width: 767px) {
+
+.ldio-50pd2nawau {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  transform: translateZ(0) scale(0.9);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
   .header{
     min-height: 100vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("pictures/sabs2.png");
