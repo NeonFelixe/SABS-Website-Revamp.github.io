@@ -81,9 +81,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navigation bar").style.top = "0";
+        document.getElementById("navigationbar").style.top = "0";
     } else {
-        document.getElementById("navigation bar").style.top = "-70px";
+        document.getElementById("navigationbar").style.top = "-70px";
     }
     prevScrollpos = currentScrollPos;
 }
