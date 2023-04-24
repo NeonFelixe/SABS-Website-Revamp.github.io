@@ -9,11 +9,22 @@
   src: url("fonts/CPR.ttf");
 }
 
+/* Style the loading animation */
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #243a32 url('/icons/loading.gif') no-repeat center center;
+  }
+ 
 
 .header {
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100%;
-  background-image: url("pictures/sabs2.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%), url("pictures/sabs2.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -44,6 +55,7 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
+  transition: top 0.3s;
 }
 
 nav ul {
@@ -422,7 +434,8 @@ nav .fa {
 
 @media (max-width: 767px) {
   .header{
-    min-height: 95vh;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("pictures/sabs2.png");
   }
   .row {
     flex-direction: column;

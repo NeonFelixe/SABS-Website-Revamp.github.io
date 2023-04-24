@@ -12,8 +12,9 @@
 </head>
 
 <body>
+    <div class="loader" id="loader"></div>
     <section class="header">
-        <nav>
+        <nav id="navigation bar">
             <a href="index.html"><img class="logo" src="pictures/logo.png"></a>
             <h1>Ste. Anne de Beaupré School</h1>
             <div class="nav-links" id="navLinks">
@@ -47,7 +48,8 @@
 
     <section class="hiring">
         <h1>Now Accepting Enrollees! <br>sy. 2023-2024</h1>
-        <p> You can enjoy the flexibility and convenience of learning from anywhere, while still having the opportunity
+        <p> You can enjoy the flexibility and convenience of learning from anywhere, while still having the
+            opportunity
             to interact with your instructors and classmates in a face-to-face setting.
         </p>
         <div class="Qualify">
@@ -62,12 +64,14 @@
         <div class="row">
             <div class="course-col">
                 <h3>STEM</h3>
-                <p>Science, Technology, Engineering and Mathematics, and it prepares students for careers in scientific
+                <p>Science, Technology, Engineering and Mathematics, and it prepares students for careers in
+                    scientific
                     and technical fields.</p>
             </div>
             <div class="course-col">
                 <h3>ABM</h3>
-                <p>Accountancy, Business and Management, and it prepares students for careers in finance, commerce and
+                <p>Accountancy, Business and Management, and it prepares students for careers in finance, commerce
+                    and
                     entrepreneurship</p>
             </div>
             <div class="course-col">
@@ -88,7 +92,8 @@
             </div>
             <div class="course-col3">
                 <h3>Bread and Pastry<br> Making</h3>
-                <p> Stands for Baking and Pastry Arts, and it prepares students for careers in food service, hospitality
+                <p> Stands for Baking and Pastry Arts, and it prepares students for careers in food service,
+                    hospitality
                     and culinary arts.</p>
             </div>
         </div>
@@ -142,56 +147,6 @@
         <img src="icons/vision.png" alt="vision">
     </div>
 
-    <script>
-        const floatingButton = document.querySelector('.floating-button');
-        floatingButton.addEventListener('click', () => {
-            floatingButton.classList.toggle('floating-window');
-            if (floatingButton.classList.contains('floating-window')) {
-                floatingButton.innerHTML += `
-      <section class="floating-button-content">
-        <h1>Vision</h1>
-        <p>Ste. Anne de Beaupré School envisions a world of proactive Filipino leaders that make the
-             world a better place both in the eyes of God and man.</p
-      </section>
-      <section class="floating-button-content">
-        <h1>Mission</h1>
-        <p>Ste. Anne de Beaupré School provides a well-balanced educational program for the formation of individuals with 
-        moral virtues, high-level intelligence and functional skills.</p
-      </section>`;
-            } else {
-                floatingButton.innerHTML = '<img src="icons/vision.png" alt="vision">';
-            }
-        });
-    </script>
-
-    <script>
-        window.addEventListener('load', () => {
-            const floatingButton = document.querySelector('.floating-button');
-            floatingButton.click();
-        });
-    </script>
-
-    <script>
-        if (window.innerWidth < 1080) {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-
-        function closePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-    </script>
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0px";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-210px";
-        }
-    </script>
-
     <div id="popup" class="popup">
         <div class="popup-content">
             <img src="pictures/warning.png" alt="Warning sign">
@@ -207,33 +162,5 @@
         </div>
     </div>
 
-    <script>
-        var popup = document.getElementById("popup");
 
-        function showPopup() {
-            popup.style.display = "block";
-        }
-
-        function closePopup() {
-            popup.style.display = "none";
-        }
-
-        function checkAccessCode() {
-            var accessCode = document.getElementById("access-code").value;
-            if (accessCode === "1120252") { // replace "myaccesscode" with your actual access code
-                window.open("https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html", "_blank")
-                popup.click();
-            } else {
-                alert("Invalid access code. Please try again.");
-            }
-        }
-        // Detect if the user is on a mobile device
-        function isMobile() {
-            return /Mobi/.test(navigator.userAgent);
-        }
-
-        // Open the link in the browser on mobile devices
-        if (isMobile()) {
-            popupLink.setAttribute("href", "https://neonfelixe.github.io/SABS-Website-Revamp.github.io/answerkey.html");
-        }
-    </script>
+    <script src="index.js"></script>
