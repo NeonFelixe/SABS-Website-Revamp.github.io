@@ -1,6 +1,7 @@
+# PROJECT PURPOSES ONLY!
 # SABS-Website-Revamp
 
-Hello everyone! My name is FeNe and I am a student at Saint Anne de Beaupre School (SABS) in Quezon City, Philippines. I am very excited to share with you that I will be leading a team of talented and passionate students to revamp our school's website.
+Hello everyone! My name is Neon and I am a student at Saint Anne de Beaupre School (SABS) in Quezon City, Philippines. I am very excited to share with you that I will be leading a team of talented and passionate students to revamp our school's website.
 
 # Development
 We have decided to embark on this project to redesign and rebuild our school's website from scratch. We will use modern web development tools and techniques to create a responsive, user-friendly and attractive website that will highlight our school's strengths and values. We will also update the content and features of the website to make it more relevant and informative for our visitors.
